@@ -57,7 +57,13 @@ new features October 2015
 4. extracts the entitlements from the provisioning profile
 5. copy the entitlements as archived-expanded-entitlements.xcent inside the app bundle (because Xcode does too)
 
+new features November 2018
+1. only create the archived-expanded-entitlements.xcent file if the version of Xcode < 9.3 as Xcode 10 does not create it.
 
-Extended by Henry ( https://github.com/henry42/ ) June 2017
+new features January 2019
+1. fixed bug where the com.apple.icloud-container-environment entitlement was being assigned an incorrect value
 
-Logging functions
+new features March 2019
+1. two more fixes for only creating the archived-expanded-entitlements.xcent file if the version of Xcode < 9.3 as Xcode 10 does not create it.
+
+_Extracted from fastlane 2.121.1_
